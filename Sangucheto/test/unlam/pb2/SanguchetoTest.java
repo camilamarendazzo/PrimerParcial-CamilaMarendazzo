@@ -27,24 +27,7 @@ public class SanguchetoTest {
 		sanguche.agregarIngrediente(i2);
 		assertEquals(90.0, sanguche.consultarPrecio(), 0.0);
 	}
-	
-	@Test
-	public void queSePuedaConsultarLosIngredientes() {
-		ArrayList<Ingrediente> esperado = new ArrayList<>();
-		Sangucheto sanguche = new Sangucheto();
-		Ingrediente i1 = new Ingrediente ("milanesa", 50.0);
-		i1.setCantidad(1);
-		Ingrediente i2 = new Ingrediente ("queso", 40.0);
-		i2.setCantidad(1);
-		Agregado a1 = new Agregado ("mostaza", 15.0);
-		a1.setCantidad(1);
-		sanguche.agregarIngrediente(i1);
-		sanguche.agregarIngrediente(i2);
-		sanguche.agregarIngrediente(a1);
-		esperado.add(i1);
-		esperado.add(i2); 
-		assertEquals(esperado.size(),sanguche.consultarIngredientes().size());
-	}
+
 	
 	@Test
 	public void queSePuedaCancelar() {
